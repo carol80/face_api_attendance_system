@@ -98,14 +98,14 @@ app.post('/sms', async (req, res) => {
 
   async function notify(){
     if (body.NumMedia > "0") {
-      // let students=["+918355889498","+918452937720"];
-      let students=[];
+      let students=["+919969276653","+919604003680","+919320021013"];
+      // let students=[];
 
       for (var i=0; i < students.length ;i++){
         client.messages
           .create({
             from: 'whatsapp:+14155238886',
-            body: `Your Attendance for the Lecture M.P on 10-02-1999 has been marked *present*`,
+            body: `Your Attendance for the Lecture M.P on 03-03-2020 has been marked *present*`,
             to: 'whatsapp:' + String(students[i])
           })
       }
