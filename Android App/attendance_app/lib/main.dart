@@ -93,9 +93,8 @@ class _HomeState extends State<Home> {
               'Attendance System Using',
               style: TextStyle(
                 color: Colors.blue,
-                fontSize: 30.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.bold,
-                decoration: TextDecoration.underline,
               ),
             ),
           ),
@@ -104,9 +103,8 @@ class _HomeState extends State<Home> {
               'Face Detection',
               style: TextStyle(
                 color: Colors.blue,
-                fontSize: 30.0,
+                fontSize: 25.0,
                 fontWeight: FontWeight.bold,
-                decoration: TextDecoration.underline,
               ),
             ),
           ),
@@ -127,7 +125,7 @@ class _HomeState extends State<Home> {
                 child: RaisedButton(
                 onPressed: (){
                   Route route = MaterialPageRoute(builder: (context) => Login());
-                  Navigator.push(context, route);
+                  Navigator.pushReplacement(context, route);
                 }, 
                 child: Text(
                   'Login',
@@ -167,6 +165,7 @@ class _HomeState extends State<Home> {
           ),
        ]
       ),
+      
     );
   }
 }
