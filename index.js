@@ -98,7 +98,7 @@ app.post('/sms', async (req, res) => {
 
   async function notify(){
     if (body.NumMedia > "0") {
-      let students=["+919969276653","+919604003680","+919320021013"];
+      let students=["+919594246827"];
       // let students=[];
 
       for (var i=0; i < students.length ;i++){
@@ -152,7 +152,7 @@ app.post('/sms', async (req, res) => {
             message = 'Send the classphoto for the facial recognition:\n\nThis might take a while';
           } else if (text == 'NOTIFY' || text == 'Notify') {
             
-            var vol = ["+918355889498","+918452937720"]
+            var vol = ["+919594246827"]
 
             for (var i=0; i < vol.length ;i++){
               var result = "https://docs.google.com/spreadsheets/d/1IWbsGzyaAxiQoIfbYXsZFsqH1g2RpBRZwRs76VGN76E/edit?usp=sharing";
@@ -167,13 +167,13 @@ app.post('/sms', async (req, res) => {
             message = `Notified to all the parents`
           
           } else if (text == 'SHOW' || text == 'Show') {
-            var result = "https://docs.google.com/spreadsheets/d/1IWbsGzyaAxiQoIfbYXsZFsqH1g2RpBRZwRs76VGN76E/edit?usp=sharing";
+            var result = "https://docs.google.com/spreadsheets/d/1iI_ub5LZKmSPd7ksLnW-amik9JOYBINSe_gfqYE_Urs/edit?usp=sharing";
             message = `Attendance sheet of the semester: \n\nlink: ${result}`;
           } else if (text == 'Bye' || text == 'Tata') {
             
             message = 'Goodbye';
           } else if (text == 'Excel' || text == 'EXCEL') {
-            var result = "https://docs.google.com/spreadsheets/d/1IWbsGzyaAxiQoIfbYXsZFsqH1g2RpBRZwRs76VGN76E/edit?usp=sharing";
+            var result = "https://docs.google.com/spreadsheets/d/1iI_ub5LZKmSPd7ksLnW-amik9JOYBINSe_gfqYE_Urs/edit?usp=sharing";
             message = `Attendance sheet of the lecture: \n\nlink: ${result}`;
           } else if ( opt == counter) {
 
