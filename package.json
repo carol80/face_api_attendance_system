@@ -16,7 +16,7 @@
     "body-parser": "^1.20.3",
     "canvas": "2.6.0",
     "child_process": "^1.0.2",
-    "dialogflow": "^1.1.2",
+    "dialogflow": "^4.0.3",
     "express": "^4.21.2",
     "express-session": "^1.17.0",
     "face-api.js": "^0.22.1",
